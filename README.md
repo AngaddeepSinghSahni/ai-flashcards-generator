@@ -8,9 +8,7 @@ I made this as a first-year uni student to practise Python and to learn how to u
 
 The demo is on free hosting, so it may be asleep when you open it. If you see a "wake up" button, click it and wait a moment.
 
-<!-- TODO: add a screenshot here once you have one:
 ![Screenshot](screenshots/app.png)
--->
 
 ## What it does
 
@@ -32,8 +30,6 @@ cd ai-flashcards-generator
 pip install -r requirements.txt
 ```
 
-<!-- TODO: check that requirements.txt is in the repo and lists everything the app needs. -->
-
 Create a file called `.env` in the project folder and put your key in it:
 
 ```
@@ -46,17 +42,15 @@ Then start the app:
 streamlit run app.py
 ```
 
-Don't upload your `.env` file to GitHub. It is meant to stay on your own computer, so the key doesn't end up public.
-
 ## Project structure
 
 | File | What it does |
 |---|---|
-| `app.py` | The Streamlit page: the three input tabs, the buttons, and showing the summary and flashcards |
-| `generator.py` | Connects to Gemini, sends the prompt and gets the answer back |
-| `schema.py` | Describes what the AI's answer should look like (a summary and a list of flashcards), using Pydantic |
-| `utils.py` | Helper functions for reading PDFs and getting the text from web pages |
-| `.env` | Holds the API key. Not included in the repo |
+| app.py | The Streamlit page: the three input tabs, the buttons, and showing the summary and flashcards |
+| generator.py | Connects to Gemini, sends the prompt and gets the answer back |
+| schema.py | Describes what the AI's answer should look like (a summary and a list of flashcards), using Pydantic |
+| utils.py | Helper functions for reading PDFs and getting the text from web pages |
+| .env | Holds the API key. Not included in the repo |
 
 ## How it works
 
@@ -91,10 +85,6 @@ Don't upload your `.env` file to GitHub. It is meant to stay on your own compute
 - Add automated tests for the helper functions
 - Let the user choose how many flashcards to make
 
-<!-- TODO: keep only the plans you actually want to do, and change them if you have your own. -->
-
 ## Credits and honesty note
 
 Built with [Streamlit](https://streamlit.io/), the Google Gemini API, Pydantic, pypdf, requests and BeautifulSoup. I wrote the application myself and used AI tools for guidance and some code, which I then adapted and debugged. I'm happy to explain any part of the code.
-
-<!-- TODO: edit this note so it matches what you actually did. -->
